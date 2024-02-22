@@ -1,11 +1,11 @@
 import React from 'react';
 import "./Header.css"
 
-const Header= function(){
+const Header= function(props){
   // const headerStyle={padding: 20, textAlign:'center', background: 'black', color:'white', textTransform:'uppercase'};
     return(
         <div className='header'>
-        phone directory
+        {props.heading}
       </div>
     )
 }

@@ -19,7 +19,7 @@ class App extends Component{
   return (
     
     <div className='body-container'>
-      <Header/>
+      <Header heading='Phone Directory'/>
       <button className=' custom-btn add-btn'>ADD</button>
       <div className='grid-container heading-container'>
         <span className='name-heading grid-item'> Name </span>
