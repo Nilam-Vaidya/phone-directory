@@ -20,7 +20,7 @@ class App extends Component{
     
     <div className='body-container'>
       <Header/>
-      <button className=' custom-btn add-btn'>Add</button>
+      <button className=' custom-btn add-btn'>ADD</button>
       <div className='grid-container heading-container'>
         <span className='name-heading grid-item'> Name </span>
         <span className='phone-heading grid-item'> Phone </span>
@@ -30,6 +30,7 @@ class App extends Component{
           return <div className='grid-container' key={sub.id}>
           <span className='grid-item'>{sub.name}</span>
           <span className='grid-item'>{sub.phone}</span>
+          <button className='custom-btn delete-btn'>DELETE</button>
           </div>
         })
       }

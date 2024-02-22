@@ -5,19 +5,23 @@ body {
     background-color: green;
     margin-top: 10px;
     margin-left: 30px;
+    color: white;
 }
 .custom-btn{
     padding: 15px;
     padding-left: 30px;
     padding-right: 30px;
-    color: white;
-    font-weight: bold;
-    border: 0cap;
+    font-weight: 700;
+    border: none;
     cursor: pointer;
+}
+.delete-btn {
+    background-color: rgb(214, 154, 164);
+    color: black;
 }
 .grid-container{
     display: grid;
-    grid-template-columns: 40% 30% auto;
+    grid-template-columns: 40% 20% 10%;
     margin-top: 10px;
     margin-left: 30px;
 }
