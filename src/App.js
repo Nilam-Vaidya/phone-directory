@@ -4,22 +4,25 @@ import './App.css'
 
 
 class App extends Component{
-  deleteHandler(){
-    alert("delete clicked");
+  constructor(){
+    super();
+    this.state ={
+      subscribersListToShow:[]
+    }
   }
   render(){
-    let subscribers= [
-      {
-        id:1,
-        name:"nilam",
-        phone: "123456789"
-      },
-      {
-        id:2,
-        name:"vishal",
-        phone:"987654321"
-      }
-    ]
+    // let subscribers= [
+    //   {
+    //     id:1,
+    //     name:"nilam",
+    //     phone: "123456789"
+    //   },
+    //   {
+    //     id:2,
+    //     name:"vishal",
+    //     phone:"987654321"
+    //   }
+    // ]
   return (
     
     <div className='body-container'>
@@ -30,11 +33,11 @@ class App extends Component{
         <span className='phone-heading grid-item'> Phone </span>
       </div>
       {
-        subscribers.map(sub => {
+        this.state.subscribersListToShow.map(sub => {
           return <div className='grid-container' key={sub.id}>
           <span className='grid-item'>{sub.name}</span>
           <span className='grid-item'>{sub.phone}</span>
-          <button className='custom-btn delete-btn' onClick={this.deleteHandler}>DELETE</button>
+          <button className='custom-btn delete-btn'>Delete</button>
           </div>
         })
       }
